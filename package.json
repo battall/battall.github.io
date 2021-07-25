@@ -1,0 +1,9 @@
+{
+  "name": "battall.github.io",
+  "scripts": {
+    "build:tailwind": "tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "latest"
+  }
+}

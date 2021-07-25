@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-color-444 {
+    color: #444;
+  }
+  .text-color-666 {
+    color: #666;
+  }
+  .text-color-888 {
+    color: #888;
+  }
+  .text-color-999 {
+    color: #999;
+  }
+}
+
+@layer components {
+  .link {
+    @apply text-xs text-color-444 hover:text-color-888 mr-1 transition-colors;
+  }
+
+  .project {
+    @apply flex flex-col hover:text-color-999 transition-colors;
+  }
+  .project-description {
+    @apply text-xs text-color-666 group-hover:text-color-999 transition-colors;
+  }
+}
